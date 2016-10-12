@@ -1,0 +1,47 @@
+
+
+********************* run following in cassandra shell  CQLSH **********************************
+use testKeyspace;
+
+CREATE TABLE Restaurants (
+restaurant_id text,
+city text,
+province text,
+country text,
+zipCode text,
+type text,
+hasAirCondition boolean,
+hasGarden boolean,
+hasPool boolean,
+isCloseToBeach  boolean,
+dailyPrice DOUBLE,
+currency text,
+roomsNumber int,
+event_time timestamp,
+
+PRIMARY KEY (restaurant_id)
+);
+
+
+CREATE TABLE Restaurants_Ts (
+restaurant_id text,
+city text,
+province text,
+country text,
+zipCode text,
+type text,
+hasAirCondition boolean,
+hasGarden boolean,
+hasPool boolean,
+isCloseToBeach  boolean,
+dailyPrice DOUBLE,
+currency text,
+roomsNumber int,
+event_time timestamp,
+PRIMARY KEY (event_time, restaurant_id)
+);
+
+COPY Restaurants (restaurant_id, city ,province, country, zipcode , type , hasaircondition ,hasGarden, hasPool, isCloseToBeach, dailyPrice, currency, roomsNumber, event_time  ) FROM 'datatrim.csv';
+
+
+COPY Restaurants_Ts (restaurant_id, city ,province, country, zipcode , type , hasaircondition ,hasGarden, hasPool, isCloseToBeach, dailyPrice, currency, roomsNumber, event_time  ) FROM 'datatrim.csv';

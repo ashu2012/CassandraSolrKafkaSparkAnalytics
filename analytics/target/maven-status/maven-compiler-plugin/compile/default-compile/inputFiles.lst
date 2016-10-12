@@ -1,0 +1,9 @@
+/media/ashutosh/unix-extra/workspace/analytics/src/main/java/atppath/Controller/WelcomeController.java
+/media/ashutosh/unix-extra/workspace/analytics/src/main/java/atppath/configs/CassandraConfig.java
+/media/ashutosh/unix-extra/workspace/analytics/src/main/java/atppath/configs/AppBeans.java
+/media/ashutosh/unix-extra/workspace/analytics/src/main/java/atppath/configs/CassandraSessionManager.java
+/media/ashutosh/unix-extra/workspace/analytics/src/main/java/atppath/repository/BookRepository.java
+/media/ashutosh/unix-extra/workspace/analytics/src/main/java/atppath/model/Vote.java
+/media/ashutosh/unix-extra/workspace/analytics/src/main/java/atppath/configs/HttpSolrContext.java
+/media/ashutosh/unix-extra/workspace/analytics/src/main/java/atppath/model/Book.java
+/media/ashutosh/unix-extra/workspace/analytics/src/main/java/atppath/repository/KeyspaceRepository.java
