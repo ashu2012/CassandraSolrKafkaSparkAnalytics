@@ -1,0 +1,3 @@
+# to kill all java process that are forked by various softwares like 
+# spark, zeppelin, scala cmd etc.
+ll -9 $(jps| awk '{print $1}')
